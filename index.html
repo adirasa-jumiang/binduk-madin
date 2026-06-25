@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aplikasi Santri - Lengkap</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" type="image/png" href="https://adirasa-jumiang.github.io/kalender/ADIRASA.png">
     <style>
         /* ---------- RESET & GLOBAL ---------- */
         * {
@@ -773,6 +774,7 @@
     <div class="menu-item" data-page="leger">📊 Leger</div>
     <div class="menu-item" data-page="rapor">📄 Cetak Rapor</div>
     <div class="menu-item" data-page="backup">💾 Backup/Restore</div>
+    <br><center><img src="https://boymohlis.github.io/ats-english/madura.png" width="50%" style="border-radius: 50%; border-color: white; border-style: solid;"></center>
 </div>
 
 <!-- MAIN CONTENT -->
@@ -786,10 +788,10 @@
             <img class="logo" id="madrasahLogo" src="" alt="Logo" />
             <div class="info">
                 <h2 id="madrasahNama">Nama Madrasah</h2>
-                <p><strong>NPSN:</strong> <span id="madrasahNPSN">-</span> &nbsp;|&nbsp; <strong>NSM:</strong> <span id="madrasahNSM">-</span></p>
-                <p><strong>Tahun Ajaran:</strong> <span id="madrasahTahunAjaran">-</span></p>
+                <p><strong>NPSN :</strong> <span id="madrasahNPSN">-</span> &nbsp;|&nbsp; <strong>NSM:</strong> <span id="madrasahNSM">-</span></p>
+                <p><strong>Tahun Ajaran :</strong> <span id="madrasahTahunAjaran">-</span></p>
                 <p id="madrasahAlamat">Alamat Madrasah</p>
-                <p class="kepala" id="madrasahKepala">👨‍🏫 Kepala: -</p>
+                <p class="kepala" id="madrasahKepala">👨‍🏫 Kepala : -</p>
             </div>
             <button class="btn-edit-profile no-print" id="btnEditProfil">✏️ Edit Profil</button>
         </div>
@@ -846,9 +848,10 @@
                     <!-- diisi JS -->
                 </tbody>
             </table>
-        </div>
+        </div><br>
+            <font color="red" style="font-size: 12px;"><i>Info : Klik nama siswa untuk melihat detail data siswa atau klik tombol Edit disebelah kanan! </i></font>
     </div>
-
+    
     <!-- LEGER -->
     <div id="page-leger" class="page">
         <h2 style="font-weight:300; margin-bottom:20px;">📊 Leger Nilai per Kelas</h2>
@@ -884,8 +887,8 @@
     <!-- DATA GURU -->
     <div id="page-guru" class="page">
         <div class="guru-toolbar">
-            <h2 style="font-weight:300;">👨‍🏫 Data Guru</h2>
-            <button class="btn-primary" id="btnTambahGuru">+ Tambah Guru</button>
+            <h2 style="font-weight:300;">👨‍🏫 Data Asatid</h2>
+            <button class="btn-primary" id="btnTambahGuru">+ Tambah Asatid</button>
         </div>
         <div class="table-wrapper">
             <table>
@@ -1374,12 +1377,12 @@
             } catch (e) { console.warn('Gagal parse madrasah, gunakan default.'); }
         }
         madrasahProfile = {
-            nama: "Madrasah Aliyah Negeri 1",
+            nama: "Madrasah Diniyah Baru",
             npsn: "12345678",
             nsm: "1234567890",
             tahunAjaran: "2024/2025",
             alamat: "Jl. Pendidikan No. 45, Kota Santri",
-            logo: "https://via.placeholder.com/80?text=Logo"
+            logo: "https://boymohlis.github.io/ats-english/madura.png"
         };
         saveMadrasah();
     }
